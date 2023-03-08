@@ -52,16 +52,7 @@ const assistant = {
         this.neuer_eintrag.type = prompt("type:");
         this.neuer_eintrag.betrag = prompt("betrag:");
         this.neuer_eintrag.datum = prompt("datum:");
-    },
-
-    eintrag_ausgeben() {
-        console.table(
-            this.neuer_eintrag.title ,
-            this.neuer_eintrag.type,
-            this.neuer_eintrag.betrag,  
-            this.neuer_eintrag.datum
-        )
-     },
+    }
 
 };
 
@@ -72,7 +63,14 @@ const machwas = (e)=>{
     let saved = document.getElementById('saved');
     let savedArray = [];
     let test = e.target.dataset['hotel'];
-    console.log( JSON.parse(test));
+    
+    let pushItem = {
+        id: "blubber",
+        bundesland: "bw",
+        hotels:JSON.parse(test)
+    }
+    assistant.saved.push(pushItem);
+    console.log(assistant.saved);
 
     if(e.target.classList.contains('active')) {
         e.target.classList.remove('active');
@@ -136,7 +134,7 @@ function format(obj) {
 }
 
 function log(...txt) {
-  document.querySelector("pre").textContent += `${txt.join("\n")}\n`
+  //document.querySelector("pre").textContent += `${txt.join("\n")}\n`
 }
 
 function getArray() {
