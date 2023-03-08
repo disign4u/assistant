@@ -1,0 +1,53 @@
+.specialrequestform {
+    padding:2rem;
+}
+
+#booking-assistant {
+  display: none;
+}
+
+.list {
+    &-table , &-h3 , &-h2 {
+        display:none;
+    }
+}
+
+.vba {
+    h3 {
+        display:block;
+        margin:1rem  0;
+    }
+    &-label-image, &-card-1 {
+        display:none;
+    }
+    &-label {
+        display: inline-flex;
+    }
+}
+
+h3 , button {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid red;
+    margin:0 1rem .5rem 0;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    &::before {
+        content:"\2610";
+        margin:0 .5rem 0 0;
+        font-size: 20px
+    }
+    &.active {
+        &::before {
+            content:"\2611";
+        }
+    }
+    &:hover {
+        background-color: black;
+        color:white;
+        &::before {
+            content:"\2611";
+        }
+    } 
+
+}

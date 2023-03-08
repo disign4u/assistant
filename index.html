@@ -1,0 +1,2640 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formular</title>
+    <link type="text/css" rel="stylesheet" href="index.css" />
+    <script>
+        let states = {
+            DE: {
+                name: "Deutschland",
+                BW: {
+                    name: "Baden-Württemberg",
+                    anzahl: 6,
+                    hotels: {
+                        hotel: {
+                            id: 4408,
+                            name: "Baiersbronn-Schliffkopf",
+                            url: ""
+                        },
+                        hotel: {
+                            id: 4409,
+                            name: "Braunsbach-Döttingen",
+                            url: ""
+                        },
+                        hotel: {
+                            id: 4410,
+                            name: "Fichtenau",
+                            url: ""
+                        },
+                        hotel: {
+                            id: 4411,
+                            name: "Hinterzarten",
+                            url: ""
+                        },
+                        hotel: {
+                            id: 4412,
+                            name: "Schluchsee",
+                            url: ""
+                        },
+                        hotel: {
+                            id: 4413,
+                            name: "Titisee-Neustadt",
+                            url: ""
+                        }
+                    }
+                },
+                BY: {
+                    name: "Bayern",
+                    anzahl: 24,
+                    hotels: {
+                        hotel: {
+                            id: 4408,
+                            name: "Baiersbronn-Schliffkopf",
+                            url: ""
+                        }
+                    }
+                },
+            }
+        }
+        //console.log(states);
+    </script>
+</head>
+
+<body>
+    <div id="animals" data-animals='["cat", "dog", "bird"]'></div>
+    <div id="vehicles" data-vehicles='{"motorcycle":"Harley", "car":"Herbie", "steamshovel":"Mike"}'></div>
+  
+    <div class="specialrequestform">
+        <h1 class="cst" style="margin-bottom: 0">Unverbindlich anfragen!</h1>
+        <p class="large">
+            Hier können Sie Ihr gewünschtes Hotel einfach und unverbindlich
+            anfragen.
+        </p>
+        <form id="booking-assistant" class="vba" method="post" action="/de/wellnesshotels/hotel-list.php#main">
+            <div class="vba-inner">
+                <div class="vba-card vba-card-1 vba-step vba-card-done">
+                    <div class="vba-head vba-head-1">
+                        <h2>Was ist Ihr Traum Reiseziel?<span class="vba-hotelcounter"></span><span
+                                class="headline-separator visuallyhidden">: </span><span
+                                class="subheadline subheadline-h2">Suchen Sie sich ruhig mehrere Reiseziele aus.</span>
+                        </h2>
+                    </div>
+                    <div class="vba-step vba-step-1 vba-grid vba-grid-4"><label class="vba-label vba-label-asimage"
+                            data-vba-indicator="160" data-vba-name="Niederlande" data-vba-type="country"><input
+                                class="visuallyhidden" type="checkbox" name="c[ids_countries][]" value="160"
+                                tabindex="-1" aria-hidden="true">
+                            <picture>
+                                <source media="(max-width: 360px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638653/160x160s 1x, https://cst-media2.viomassl.com/channel/947/638653/320x320s 2x">
+                                <source media="(max-width: 414px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638653/180x180s 1x, https://cst-media2.viomassl.com/channel/947/638653/360x360s 2x">
+                                <source media="(max-width: 640px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638653/290x290s 1x, https://cst-media2.viomassl.com/channel/947/638653/580x580s 2x">
+                                <source media="(max-width: 1023px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638653/450x450s 1x, https://cst-media2.viomassl.com/channel/947/638653/900x900s 2x">
+                                <source media="(max-width: 1280px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638653/295x303s 1x, https://cst-media2.viomassl.com/channel/947/638653/590x606s 2x">
+                                <source
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638653/360x370s 1x, https://cst-media2.viomassl.com/channel/947/638653/720x740s 2x">
+                                <img class="vba-label-image image-loaded"
+                                    src="https://cst-media2.viomassl.com/channel/947/638653/720x480s" width="640"
+                                    height="640" alt="Niederlande" loading="lazy" decoding="async">
+                            </picture>
+                            <h3 class="vba-label-overlay">Niederlande</h3>
+                        </label><label class="vba-label vba-label-asimage" data-vba-indicator="64"
+                            data-vba-name="Kroatien" data-vba-type="country"><input class="visuallyhidden"
+                                type="checkbox" name="c[ids_countries][]" value="64" tabindex="-1" aria-hidden="true">
+                            <picture>
+                                <source media="(max-width: 360px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638651/160x160s 1x, https://cst-media4.viomassl.com/channel/947/638651/320x320s 2x">
+                                <source media="(max-width: 414px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638651/180x180s 1x, https://cst-media4.viomassl.com/channel/947/638651/360x360s 2x">
+                                <source media="(max-width: 640px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638651/290x290s 1x, https://cst-media4.viomassl.com/channel/947/638651/580x580s 2x">
+                                <source media="(max-width: 1023px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638651/450x450s 1x, https://cst-media4.viomassl.com/channel/947/638651/900x900s 2x">
+                                <source media="(max-width: 1280px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638651/295x303s 1x, https://cst-media4.viomassl.com/channel/947/638651/590x606s 2x">
+                                <source
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638651/360x370s 1x, https://cst-media4.viomassl.com/channel/947/638651/720x740s 2x">
+                                <img class="vba-label-image image-loaded"
+                                    src="https://cst-media4.viomassl.com/channel/947/638651/720x480s" width="640"
+                                    height="640" alt="Kroatien" loading="lazy" decoding="async">
+                            </picture>
+                            <h3 class="vba-label-overlay">Kroatien</h3>
+                        </label><label class="vba-label vba-label-asimage" data-vba-indicator="1"
+                            data-vba-name="Deutschland" data-vba-type="country"><input class="visuallyhidden"
+                                type="checkbox" name="c[ids_countries][]" value="1" tabindex="-1" aria-hidden="true">
+                            <picture>
+                                <source media="(max-width: 360px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638643/334x188s 1x, https://cst-media4.viomassl.com/channel/947/638643/668x376s 2x">
+                                <source media="(max-width: 414px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638643/377x212s 1x, https://cst-media4.viomassl.com/channel/947/638643/754x424s 2x">
+                                <source media="(max-width: 640px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638643/600x338s 1x, https://cst-media4.viomassl.com/channel/947/638643/1200x675s 2x">
+                                <source media="(max-width: 1023px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638643/983x553s 1x, https://cst-media4.viomassl.com/channel/947/638643/1920x1080s 2x">
+                                <source media="(max-width: 1280px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638643/295x623s 1x, https://cst-media4.viomassl.com/channel/947/638643/590x1246s 2x">
+                                <source
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638643/360x760s 1x, https://cst-media4.viomassl.com/channel/947/638643/720x1520s 2x">
+                                <img class="vba-label-image image-loaded"
+                                    src="https://cst-media4.viomassl.com/channel/947/638643/360x760s" width="640"
+                                    height="640" alt="Deutschland" loading="lazy" decoding="async">
+                            </picture>
+                            <h3 class="vba-label-overlay">Deutschland</h3>
+                        </label><label class="vba-label vba-label-asimage" data-vba-indicator="2"
+                            data-vba-name="Österreich" data-vba-type="country"><input class="visuallyhidden"
+                                type="checkbox" name="c[ids_countries][]" value="2" tabindex="-1" aria-hidden="true">
+                            <picture>
+                                <source media="(max-width: 360px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638645/160x160s 1x, https://cst-media2.viomassl.com/channel/947/638645/320x320s 2x">
+                                <source media="(max-width: 414px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638645/180x180s 1x, https://cst-media2.viomassl.com/channel/947/638645/360x360s 2x">
+                                <source media="(max-width: 640px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638645/290x290s 1x, https://cst-media2.viomassl.com/channel/947/638645/580x580s 2x">
+                                <source media="(max-width: 1023px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638645/450x450s 1x, https://cst-media2.viomassl.com/channel/947/638645/900x900s 2x">
+                                <source media="(max-width: 1280px)"
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638645/295x623s 1x, https://cst-media2.viomassl.com/channel/947/638645/590x1246s 2x">
+                                <source
+                                    srcset="https://cst-media2.viomassl.com/channel/947/638645/360x760s 1x, https://cst-media2.viomassl.com/channel/947/638645/720x1520s 2x">
+                                <img class="vba-label-image image-loaded"
+                                    src="https://cst-media2.viomassl.com/channel/947/638645/360x760s" width="640"
+                                    height="640" alt="Österreich" loading="lazy" decoding="async">
+                            </picture>
+                            <h3 class="vba-label-overlay">Österreich</h3>
+                        </label><label class="vba-label vba-label-asimage" data-vba-indicator="5"
+                            data-vba-name="Italien" data-vba-type="country"><input class="visuallyhidden"
+                                type="checkbox" name="c[ids_countries][]" value="5" tabindex="-1" aria-hidden="true">
+                            <picture>
+                                <source media="(max-width: 360px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638647/160x160s 1x, https://cst-media4.viomassl.com/channel/947/638647/320x320s 2x">
+                                <source media="(max-width: 414px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638647/180x180s 1x, https://cst-media4.viomassl.com/channel/947/638647/360x360s 2x">
+                                <source media="(max-width: 640px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638647/290x290s 1x, https://cst-media4.viomassl.com/channel/947/638647/580x580s 2x">
+                                <source media="(max-width: 1023px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638647/450x450s 1x, https://cst-media4.viomassl.com/channel/947/638647/900x900s 2x">
+                                <source media="(max-width: 1280px)"
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638647/295x623s 1x, https://cst-media4.viomassl.com/channel/947/638647/590x1246s 2x">
+                                <source
+                                    srcset="https://cst-media4.viomassl.com/channel/947/638647/360x760s 1x, https://cst-media4.viomassl.com/channel/947/638647/720x1520s 2x">
+                                <img class="vba-label-image image-loaded"
+                                    src="https://cst-media4.viomassl.com/channel/947/638647/360x760s" width="640"
+                                    height="640" alt="Italien" loading="lazy" decoding="async">
+                            </picture>
+                            <h3 class="vba-label-overlay">Italien</h3>
+                        </label></div>
+                </div>
+                <div class="vba-card vba-card-2 vba-grid vba-grid-2 vba-card-done">
+                    <div class="vba-head vba-head-2">
+                        <h2>Bestimmte Lage oder Vorlieben?<span class="vba-hotelcounter"></span><span
+                                class="headline-separator visuallyhidden">: </span><span
+                                class="subheadline subheadline-h2">Sie können mehrere Zwischenschritte auswählen</span>
+                        </h2>
+                    </div>
+                    <div class="vba-step vba-card-2">
+                        <div class="vba-step vba-step-2 vba-grid vba-grid-2">
+                            <h3 class="vba-step-headline">Lage wählen</h3><label class="vba-label vba-label-asimage"
+                                data-vba-indicator="35503" data-vba-name="am Wasser" data-vba-type="indicator"><input
+                                    class="visuallyhidden" type="checkbox" name="c[ids_indicators][]" value="35503"
+                                    tabindex="-1" aria-hidden="true">
+                                <h3 class="vba-label-overlay">am Wasser</h3>
+                                <picture>
+                                    <source media="(max-width: 360px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/638655/160x160s 1x, https://cst-media4.viomassl.com/channel/947/638655/320x320s 2x">
+                                    <source media="(max-width: 414px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/638655/180x180s 1x, https://cst-media4.viomassl.com/channel/947/638655/360x360s 2x">
+                                    <source media="(max-width: 640px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/638655/290x290s 1x, https://cst-media4.viomassl.com/channel/947/638655/580x580s 2x">
+                                    <source media="(max-width: 1023px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/638655/450x450s 1x, https://cst-media4.viomassl.com/channel/947/638655/900x900s 2x">
+                                    <source media="(max-width: 1280px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/638655/285x285s 1x, https://cst-media4.viomassl.com/channel/947/638655/570x570s 2x">
+                                    <source
+                                        srcset="https://cst-media4.viomassl.com/channel/947/638655/350x350s 1x, https://cst-media4.viomassl.com/channel/947/638655/700x700s 2x">
+                                    <img class="vba-label-image image-loaded"
+                                        src="https://cst-media4.viomassl.com/channel/947/638655/350x350s" width="350"
+                                        height="350" alt="am Wasser" loading="lazy" decoding="async">
+                                </picture>
+                            </label><label class="vba-label vba-label-asimage" data-vba-indicator="35569"
+                                data-vba-name="im Grünen" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35569" tabindex="-1"
+                                    aria-hidden="true">
+                                <h3 class="vba-label-overlay">im Grünen</h3>
+                                <picture>
+                                    <source media="(max-width: 360px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/635835/160x160s 1x, https://cst-media4.viomassl.com/channel/947/635835/320x320s 2x">
+                                    <source media="(max-width: 414px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/635835/180x180s 1x, https://cst-media4.viomassl.com/channel/947/635835/360x360s 2x">
+                                    <source media="(max-width: 640px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/635835/290x290s 1x, https://cst-media4.viomassl.com/channel/947/635835/580x580s 2x">
+                                    <source media="(max-width: 1023px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/635835/450x450s 1x, https://cst-media4.viomassl.com/channel/947/635835/900x900s 2x">
+                                    <source media="(max-width: 1280px)"
+                                        srcset="https://cst-media4.viomassl.com/channel/947/635835/285x285s 1x, https://cst-media4.viomassl.com/channel/947/635835/570x570s 2x">
+                                    <source
+                                        srcset="https://cst-media4.viomassl.com/channel/947/635835/350x350s 1x, https://cst-media4.viomassl.com/channel/947/635835/700x700s 2x">
+                                    <img class="vba-label-image image-loaded"
+                                        src="https://cst-media4.viomassl.com/channel/947/635835/350x350s" width="350"
+                                        height="350" alt="im Grünen" loading="lazy" decoding="async">
+                                </picture>
+                            </label><label class="vba-label vba-label-asimage" data-vba-indicator="35507"
+                                data-vba-name="im Skigebiet" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35507" tabindex="-1"
+                                    aria-hidden="true">
+                                <h3 class="vba-label-overlay">im Skigebiet</h3>
+                                <picture>
+                                    <source media="(max-width: 360px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/635833/160x160s 1x, https://cst-media2.viomassl.com/channel/947/635833/320x320s 2x">
+                                    <source media="(max-width: 414px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/635833/180x180s 1x, https://cst-media2.viomassl.com/channel/947/635833/360x360s 2x">
+                                    <source media="(max-width: 640px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/635833/290x290s 1x, https://cst-media2.viomassl.com/channel/947/635833/580x580s 2x">
+                                    <source media="(max-width: 1023px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/635833/450x450s 1x, https://cst-media2.viomassl.com/channel/947/635833/900x900s 2x">
+                                    <source media="(max-width: 1280px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/635833/285x285s 1x, https://cst-media2.viomassl.com/channel/947/635833/570x570s 2x">
+                                    <source
+                                        srcset="https://cst-media2.viomassl.com/channel/947/635833/350x350s 1x, https://cst-media2.viomassl.com/channel/947/635833/700x700s 2x">
+                                    <img class="vba-label-image image-loaded"
+                                        src="https://cst-media2.viomassl.com/channel/947/635833/350x350s" width="350"
+                                        height="350" alt="im Skigebiet" loading="lazy" decoding="async">
+                                </picture>
+                            </label><label class="vba-label vba-label-asimage" data-vba-indicator="35505"
+                                data-vba-name="in den Bergen" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35505" tabindex="-1"
+                                    aria-hidden="true">
+                                <h3 class="vba-label-overlay">in den Bergen</h3>
+                                <picture>
+                                    <source media="(max-width: 360px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/638657/160x160s 1x, https://cst-media2.viomassl.com/channel/947/638657/320x320s 2x">
+                                    <source media="(max-width: 414px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/638657/180x180s 1x, https://cst-media2.viomassl.com/channel/947/638657/360x360s 2x">
+                                    <source media="(max-width: 640px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/638657/290x290s 1x, https://cst-media2.viomassl.com/channel/947/638657/580x580s 2x">
+                                    <source media="(max-width: 1023px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/638657/450x450s 1x, https://cst-media2.viomassl.com/channel/947/638657/900x900s 2x">
+                                    <source media="(max-width: 1280px)"
+                                        srcset="https://cst-media2.viomassl.com/channel/947/638657/285x285s 1x, https://cst-media2.viomassl.com/channel/947/638657/570x570s 2x">
+                                    <source
+                                        srcset="https://cst-media2.viomassl.com/channel/947/638657/350x350s 1x, https://cst-media2.viomassl.com/channel/947/638657/700x700s 2x">
+                                    <img class="vba-label-image image-loaded"
+                                        src="https://cst-media2.viomassl.com/channel/947/638657/350x350s" width="350"
+                                        height="350" alt="in den Bergen" loading="lazy" decoding="async">
+                                </picture>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="vba-step">
+                        <div class="vba-step vba-step-3 vba-grid vba-grid-2">
+                            <h3 class="vba-step-headline">Vorlieben wählen</h3><label
+                                class="vba-label vba-label-asimage" data-vba-indicator="35515" data-vba-name="Romantik"
+                                data-vba-type="indicator"><input class="visuallyhidden" type="checkbox"
+                                    name="c[ids_indicators][]" value="35515" tabindex="-1" aria-hidden="true">
+                                <h3 class="vba-label-overlay">Romantik</h3>
+                                <picture><img class="vba-label-image image-loaded"
+                                        src="https://cst-media4.viomassl.com/channel/947/638659/640x640s" width="640"
+                                        height="640" alt="Romantik" loading="lazy" decoding="async"></picture>
+                            </label><label class="vba-label vba-label-asimage" data-vba-indicator="35523"
+                                data-vba-name="Familie" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35523" tabindex="-1"
+                                    aria-hidden="true">
+                                <h3 class="vba-label-overlay">Familie</h3>
+                                <picture><img class="vba-label-image image-loaded"
+                                        src="https://cst-media2.viomassl.com/channel/947/635857/640x640s" width="640"
+                                        height="640" alt="Familie" loading="lazy" decoding="async"></picture>
+                            </label><label class="vba-label vba-label-asimage" data-vba-indicator="35521"
+                                data-vba-name="Aktiv" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35521" tabindex="-1"
+                                    aria-hidden="true">
+                                <h3 class="vba-label-overlay">Aktiv</h3>
+                                <picture><img class="vba-label-image image-loaded"
+                                        src="https://cst-media4.viomassl.com/channel/947/688843/640x640s" width="640"
+                                        height="640" alt="Aktiv" loading="lazy" decoding="async"></picture>
+                            </label><label class="vba-label vba-label-asimage" data-vba-indicator="35519"
+                                data-vba-name="Gesundheit" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35519" tabindex="-1"
+                                    aria-hidden="true">
+                                <h3 class="vba-label-overlay">Gesundheit</h3>
+                                <picture><img class="vba-label-image image-loaded"
+                                        src="https://cst-media2.viomassl.com/channel/947/635829/640x640s" width="640"
+                                        height="640" alt="Gesundheit" loading="lazy" decoding="async"></picture>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="vba-card vba-card-3 vba-grid vba-grid-2 vba-card-active">
+                    <div class="vba-head vba-head-4">
+                        <h2>Highlights &amp; Services spezifizieren<span class="vba-hotelcounter"></span><span
+                                class="headline-separator visuallyhidden">:
+                                <br /></span><span class="subheadline subheadline-h2">Welche Features <b
+                                    style="text-decoration: underline;">müssen</b> in Ihrem Wellnessurlaub mit dabei
+                                sein?</span></h2>
+                    </div>
+                    <div class="vba-step vba-card-4">
+                        <div class="vba-step vba-step-4 vba-grid vba-grid-2">
+                            <h3 class="vba-step-headline">Wellnesshighlights</h3><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35529"
+                                data-vba-name="PrivateSpa" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35529" tabindex="-1"
+                                    aria-hidden="true"><span>PrivateSpa</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35531"
+                                data-vba-name="Naturbadeteich" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35531" tabindex="-1"
+                                    aria-hidden="true"><span>Naturbadeteich</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35525"
+                                data-vba-name="Medicial Wellness" data-vba-type="indicator"><input
+                                    class="visuallyhidden" type="checkbox" name="c[ids_indicators][]" value="35525"
+                                    tabindex="-1" aria-hidden="true"><span>Medicial Wellness</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35527"
+                                data-vba-name="Thermalwasser" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35527" tabindex="-1"
+                                    aria-hidden="true"><span>Thermalwasser</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35535"
+                                data-vba-name="Ayurveda, TCM, Detox" data-vba-type="indicator"><input
+                                    class="visuallyhidden" type="checkbox" name="c[ids_indicators][]" value="35535"
+                                    tabindex="-1" aria-hidden="true"><span>Ayurveda, TCM, Detox</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35533"
+                                data-vba-name="Infinity-/Sky-Pool" data-vba-type="indicator"><input
+                                    class="visuallyhidden" type="checkbox" name="c[ids_indicators][]" value="35533"
+                                    tabindex="-1" aria-hidden="true"><span>Infinity-/Sky-Pool</span></label>
+                        </div>
+                    </div>
+                    <div class="vba-step vba-card-5">
+                        <div class="vba-step vba-step-5 vba-grid vba-grid-2">
+                            <h3 class="vba-step-headline">Besondere Ausstattung &amp; Services</h3><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35497"
+                                data-vba-name="Personal Trainer" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35497" tabindex="-1"
+                                    aria-hidden="true"><span>Personal Trainer</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35487" data-vba-name="Reiten"
+                                data-vba-type="indicator"><input class="visuallyhidden" type="checkbox"
+                                    name="c[ids_indicators][]" value="35487" tabindex="-1"
+                                    aria-hidden="true"><span>Reiten</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35551"
+                                data-vba-name="Ladestation für E-Autos" data-vba-type="indicator"><input
+                                    class="visuallyhidden" type="checkbox" name="c[ids_indicators][]" value="35551"
+                                    tabindex="-1" aria-hidden="true"><span>Ladestation für E-Autos</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35543" data-vba-name="Yoga"
+                                data-vba-type="indicator"><input class="visuallyhidden" type="checkbox"
+                                    name="c[ids_indicators][]" value="35543" tabindex="-1"
+                                    aria-hidden="true"><span>Yoga</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35491"
+                                data-vba-name="Ski Service" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35491" tabindex="-1"
+                                    aria-hidden="true"><span>Ski Service</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35547" data-vba-name="Tennis"
+                                data-vba-type="indicator"><input class="visuallyhidden" type="checkbox"
+                                    name="c[ids_indicators][]" value="35547" tabindex="-1"
+                                    aria-hidden="true"><span>Tennis</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35495"
+                                data-vba-name="Kinderanimation" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35495" tabindex="-1"
+                                    aria-hidden="true"><span>Kinderanimation</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35493"
+                                data-vba-name="Chalets" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35493" tabindex="-1"
+                                    aria-hidden="true"><span>Chalets</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35549"
+                                data-vba-name="E-Bike Verleih" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35549" tabindex="-1"
+                                    aria-hidden="true"><span>E-Bike Verleih</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35541"
+                                data-vba-name="A la carte Restaurant" data-vba-type="indicator"><input
+                                    class="visuallyhidden" type="checkbox" name="c[ids_indicators][]" value="35541"
+                                    tabindex="-1" aria-hidden="true"><span>A la carte Restaurant</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35485"
+                                data-vba-name="Adults Only" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35485" tabindex="-1"
+                                    aria-hidden="true"><span>Adults Only</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35483"
+                                data-vba-name="Hunde willkommen" data-vba-type="indicator"><input class="visuallyhidden"
+                                    type="checkbox" name="c[ids_indicators][]" value="35483" tabindex="-1"
+                                    aria-hidden="true"><span>Hunde willkommen</span></label><label
+                                class="vba-label vba-label-ascheckbox" data-vba-indicator="35489" data-vba-name="Golf"
+                                data-vba-type="indicator"><input class="visuallyhidden" type="checkbox"
+                                    name="c[ids_indicators][]" value="35489" tabindex="-1"
+                                    aria-hidden="true"><span>Golf</span></label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+
+        <div id="special-list-me" class="special-list">
+            <h2 class="list-h2">Deutschland [47]</h2>
+            <hr />
+            <div class="bl">
+                <button class="bundesland" id="BW" data-hotel="[1234,5678,8908,1234]">
+                    Baden-Württemberg
+                </button>
+                <ul style="display:none">
+                    <li class="redme">
+                        <h5>Baiersbronn-Schliffkopf</h5>
+                    </li>
+                    <li>
+                        <h5>Braunsbach-Döttingen</h5>
+                    </li>
+                    <li>
+                        <h5>Fichtenau</h5>
+                    </li>
+                    <li>
+                        <h5>Hinterzarten</h5>
+                    </li>
+                    <li>
+                        <h5>Schluchsee</h5>
+                    </li>
+                    <li>
+                        <h5>Titisee-Neustadt</h5>
+                    </li>
+                </ul>
+            </div>
+
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Baiersbronn-Schliffkopf [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-2444-nationalpark-hotel-schliffkopf.html">Nationalpark-Hotel
+                                            Schliffkopf -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Braunsbach-Döttingen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6661-hotel-schloss-doettingen.html">Hotel
+                                            Schloss Döttingen -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Fichtenau [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5943-meiser-vital-hotel.html">Meiser Vital
+                                            Hotel -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Hinterzarten [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5545-parkhotel-adler.html">Parkhotel Adler -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Schluchsee [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6399-vier-jahreszeiten-am-schluchsee.html">Vier
+                                            Jahreszeiten am Schluchsee -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Titisee-Neustadt [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5523-treschers-das-hotel-am-see.html">Treschers
+                                            – Das Hotel am See -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Bayern [24]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="greenme">
+                                <h5>Allgäu [4]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4434-das-koenig-ludwig-inspiration-spa.html">Das
+                                            König Ludwig Inspiration SPA</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3737-das-parkhotel.html">Das Parkhotel</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5337-panorama-land-wellnesshotel.html">Panorama
+                                            Land- &amp; Wellnesshotel</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4412-hotel-sommer.html">Hotel Sommer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="greenme">
+                                <h5>Bayerischer Wald [3]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5272-das-stemps-wellnessresort.html">Das
+                                            Stemp****S Wellnessresort</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5117-wellness-sporthotel-jagdhof.html">Wellness-
+                                            &amp; Sporthotel Jagdhof</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4088-hotel-sonnenhof-lam.html">Hotel Sonnenhof
+                                            Lam</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="yellowme">
+                                <h5>Bayern [2]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4991-hanusel-hof-s.html">Hanusel Hof ****S</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5550-sport-und-ferienhotel-riedlberg.html">Sport-
+                                            und Ferienhotel Riedlberg</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Franken [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6074-landhaus-sponsel-regus.html">Landhaus
+                                            Sponsel-Regus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Landkreis Passau [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5452-ortners-resort.html">Ortner´s Resort
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="yellowme">
+                                <h5>Oberbayern [2]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6075-spa-resort-bachmair-weissach.html">Spa
+                                            &amp; Resort Bachmair Weissach</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6847-hotel-victory-therme-erding.html">Hotel
+                                            Victory Therme Erding</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Füssing, Niederbayern [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5452-ortners-resort.html">Ortner´s Resort
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Bad Hindelang [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5658-panoramahotel-oberjoch.html">Panoramahotel
+                                            Oberjoch -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Bad Wörishofen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3737-das-parkhotel.html">Das Parkhotel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Berchtesgaden [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6365-hotel-edelweiss-berchtesgaden.html">Hotel
+                                            EDELWEISS Berchtesgaden -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Büchlberg [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5272-das-stemps-wellnessresort.html">Das
+                                            Stemp****S Wellnessresort</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Drachselsried [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5550-sport-und-ferienhotel-riedlberg.html">Sport-
+                                            und Ferienhotel Riedlberg</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Erding [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6847-hotel-victory-therme-erding.html">Hotel
+                                            Victory Therme Erding</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Frauenau [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5939-hotel-eibl-brunner.html">Hotel
+                                            Eibl-Brunner -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Füssen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4412-hotel-sommer.html">Hotel Sommer</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Grainet [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-6229-huettenhof-wellnesshotel-luxus-bergchalets.html">Hüttenhof
+                                            – Wellnesshotel &amp; Luxus-Bergchalets -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Heiligenstadt [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6074-landhaus-sponsel-regus.html">Landhaus
+                                            Sponsel-Regus</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Kaikenried [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4429-landromantik-wellnesshotel-oswald.html">Landromantik
+                                            Wellnesshotel Oswald -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Lam [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4088-hotel-sonnenhof-lam.html">Hotel Sonnenhof
+                                            Lam</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Oberstaufen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5942-golf-alpin-wellness-resort-hotel-ludwig-royal.html">Golf
+                                            &amp; Alpin Wellness Resort Hotel Ludwig Royal -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Oberstdorf [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3903-schueles-gesundheitsresort-spa.html">Schüle's
+                                            Gesundheitsresort &amp; Spa -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Röhrnbach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5117-wellness-sporthotel-jagdhof.html">Wellness-
+                                            &amp; Sporthotel Jagdhof</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Rückholz [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5337-panorama-land-wellnesshotel.html">Panorama
+                                            Land- &amp; Wellnesshotel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Schwangau bei Füssen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4434-das-koenig-ludwig-inspiration-spa.html">Das
+                                            König Ludwig Inspiration SPA</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Schönau am Königsee [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5919-alm-wellnesshotel-alpenhof.html">Alm
+                                            &amp; Wellnesshotel Alpenhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Englmar [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4428-angerhof-sport-und-wellnesshotel.html">Angerhof
+                                            Sport- und Wellnesshotel -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Viechtach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5818-burghotel-sterr.html">Burghotel Sterr -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Wegscheid [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5312-wellnesshotel-reischlhof.html">Wellnesshotel
+                                            Reischlhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Weissach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6075-spa-resort-bachmair-weissach.html">Spa
+                                            &amp; Resort Bachmair Weissach</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Weitnau-Hellengerst [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4991-hanusel-hof-s.html">Hanusel Hof ****S</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Hessen [2]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Künzell [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5249-sieben-welten-hotel-spa-resort.html">Sieben
+                                            Welten Hotel &amp; Spa Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Oberorke [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3083-hotel-freund.html">Hotel Freund -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Mecklenburg-Vorpommern [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Seebad Ahlbeck [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5569-seetelhotel-ahlbecker-hof.html">Seetelhotel
+                                            Ahlbecker Hof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Niedersachsen [3]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Sachsa [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-4912-romantischer-winkel--roligio-wellness-resort.html">Romantischer
+                                            Winkel - RoLigio® &amp; Wellness Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Bad Zwischenahn [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-4063-romantik-hotel-jagdhaus-eiden-am-see.html">Romantik
+                                            Hotel Jagdhaus Eiden am See -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Norderney [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4432-strandhotel-georgshoehe.html">Strandhotel
+                                            Georgshöhe -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Nordrhein-Westfalen [4]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="redme">
+                                <h5>Niederrhein [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3941-landhotel-voshoevel-gmbh.html">Landhotel
+                                            Voshövel GmbH</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Driburg [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5796-graeflicher-park-health-balance-resort.html">Gräflicher
+                                            Park Health &amp; Balance Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Geldern [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5922-see-park-janssen.html">See Park Janssen -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Schermbeck [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3941-landhotel-voshoevel-gmbh.html">Landhotel
+                                            Voshövel GmbH</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Schmallenberg [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-2453-romantik-wellnesshotel-deimann.html">Romantik-
+                                            &amp; Wellnesshotel Deimann -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Rheinland-Pfalz [3]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="redme">
+                                <h5>Rheinhessen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4690-jordans-untermuehle.html">Jordan's
+                                            Untermühle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Sobernheim [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6261-bollants-spa-im-park.html">BollAnts Spa
+                                            im Park -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Dahn [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-2438-pfalzblick-wald-spa-resort.html">PFALZBLICK
+                                            WALD SPA RESORT -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Köngernheim [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4690-jordans-untermuehle.html">Jordan's
+                                            Untermühle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Saarland [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Gonnesweiler [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5305-seezeitlodge-hotel-spa.html">Seezeitlodge
+                                            Hotel &amp; Spa -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Schleswig-Holstein [3]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="redme">
+                                <h5>Nordfriesland [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6895-upstalsboom-wyk-auf-foehr.html">Upstalsboom
+                                            Wyk auf Föhr</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Simonsberg [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5938-lundenbergsand-nordsee-hideaway-und-spa.html">LUNDENBERGSAND
+                                            Nordsee Hideaway und Spa -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Timmendorfer Strand [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-4427-grand-hotel-seeschloesschen-sea-retreat-spa.html">Grand
+                                            Hotel Seeschlösschen Sea Retreat &amp; SPA -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Wyk auf Föhr [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6895-upstalsboom-wyk-auf-foehr.html">Upstalsboom
+                                            Wyk auf Föhr</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <h2 class="list-h2">Italien [34]</h2>
+            <h3 class="list-h3">Sizilien [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="redme">
+                                <h5>Trapani [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-6877-almar-giardino-di-costanza-resort-spa.html">Almar
+                                            Giardino di Costanza Resort &amp; Spa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Mazara del Vallo [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-6877-almar-giardino-di-costanza-resort-spa.html">Almar
+                                            Giardino di Costanza Resort &amp; Spa</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Trentino-Südtirol [30]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="redme">
+                                <h5>Bozen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4280-alpen-tesitin.html">Alpen
+                                            Tesitin*****</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Burggrafenamt [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3205-hotel-therme-meran.html">Hotel Therme
+                                            Meran</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Grödnertal [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6829-adler-spa-resort-dolomiti.html">ADLER Spa
+                                            Resort DOLOMITI</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="yellowme">
+                                <h5>Meraner Land [2]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6066-quellenhof-see-lodge.html">Quellenhof See
+                                            Lodge</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3141-quellenhof-luxury-resort-passeier.html">Quellenhof
+                                            Luxury Resort Passeier</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Südtirol [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4720-das-gerstl-alpine-retreat.html">DAS
+                                            GERSTL Alpine Retreat
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Algund [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5998-hotel-das-dorner.html">Hotel Das Dorner -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Brenner [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5817-feuerstein-nature-family-resort.html">Feuerstein
+                                            Nature Family Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Deutschnofen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5142-hotel-pfoesl.html">Hotel Pfösl -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Dorf Tirol [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5797-hotel-golserhof.html">Hotel Golserhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Hafling [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5828-alpine-spa-resort-viktoria.html">Alpine
+                                            Spa Resort Viktoria -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Jenesien [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5921-hotel-saltus.html">Hotel Saltus -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="yellowme">
+                                <h5>Kiens [2]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6327-kronhotel-leitgam.html">Kronhotel Leitgam
+                                            -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6329-kronhotel-kronblick.html">Kronhotel
+                                            Kronblick -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Lüsen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5823-naturhotel-luesnerhof.html">Naturhotel
+                                            Lüsnerhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Mals im Vinschgau | Malles Val Venosta [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4720-das-gerstl-alpine-retreat.html">DAS
+                                            GERSTL Alpine Retreat
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="yellowme">
+                                <h5>Marling [2]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5391-giardino-marling.html">Giardino Marling -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4761-bio-und-wellnesshotel-pazeider.html">Bio-
+                                            und Wellnesshotel Pazeider -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Meran (BZ) [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3205-hotel-therme-meran.html">Hotel Therme
+                                            Meran</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Meransen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5815-panorama-hotel-huberhof.html">Panorama
+                                            Hotel Huberhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Naturns [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5822-lindenhof-pure-luxury-spa-dolcevita-resort.html">Lindenhof
+                                            Pure Luxury &amp; Spa DolceVita Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Natz - Schabs [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5932-das-muehlwald-quality-time-family-resort.html">Das
+                                            Mühlwald-Quality Time Family Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Olang | Valdaora [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3218-alpin-panorama-hotel-hubertus.html">Alpin
+                                            Panorama Hotel Hubertus -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Pichl-Gsies [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6463-alpine-nature-hotel-stoll.html">Alpine
+                                            Nature Hotel Stoll -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Reischach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1467-das-majestic-hotel-spa.html">Das Majestic
+                                            Hotel &amp; Spa -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Ridnaun [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5659-hotel-gassenhof.html">Hotel Gassenhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Schenna [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4632-hotel-hohenwart.html">Hotel Hohenwart -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Seiser Alm [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5920-tirler-dolomites-living-hotel.html">Tirler-
+                                            Dolomites Living Hotel -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Johann im Ahrntal [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1483-alpenpalace.html">Alpenpalace -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Leonhard in Passeier [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5826-hotel-bad-fallenbach.html">Hotel Bad
+                                            Fallenbach -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Martin in Passeier [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3141-quellenhof-luxury-resort-passeier.html">Quellenhof
+                                            Luxury Resort Passeier</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>
+                                    St. Martin in Passeier bei Meran | San Martino in Passiria a
+                                    Merano [1]
+                                </h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6066-quellenhof-see-lodge.html">Quellenhof See
+                                            Lodge</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Ulrich [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6829-adler-spa-resort-dolomiti.html">ADLER Spa
+                                            Resort DOLOMITI</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Taisten Welsberg [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4280-alpen-tesitin.html">Alpen
+                                            Tesitin*****</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Tiers am Rosengarten [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4300-cyprianerhof.html">Cyprianerhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Wolkenstein in Gröden [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6355-granvara-relais-spa-hotel.html">Granvara
+                                            Relais &amp; Spa Hotel -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Venetien [3]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bibione [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-7111-savoy-beach-hotel-thermal-spa.html">Savoy
+                                            Beach Hotel &amp; Thermal SPA -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Lazise | Verona [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4934-quellenhof-luxury-resort-lazise.html">Quellenhof
+                                            Luxury Resort Lazise -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Lido di Jesolo [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6007-almar-jesolo-resort-spa.html">Almar
+                                            Jesolo Resort &amp; Spa -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <h2 class="list-h2">Kroatien [1]</h2>
+            <h3 class="list-h3">Krapina-Zagorje [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Krapinske Toplice [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4748-wellness-spa-hotel-villa-magdalena.html">Wellness
+                                            &amp; Spa Hotel Villa Magdalena -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <h2 class="list-h2">Niederlande [2]</h2>
+            <h3 class="list-h3">Gelderland [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>RN Voorst [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5598-hotel-und-therme-bussloo.html">Hotel und
+                                            Therme Bussloo -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Groningen [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>GA Bad Nieuweschans [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-4754-wellness-hotel-thermen-bad-nieuweschans.html">Wellness
+                                            &amp; Hotel Thermen Bad Nieuweschans -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr />
+            <h2 class="list-h2">Österreich [56]</h2>
+            <h3 class="list-h3">Burgenland [3]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Andau [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-7109-scheiblhofer-the-resort.html">Scheiblhofer
+                                            THE RESORT -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Bad Tatzmannsdorf [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6267-reduce-hotel-vital.html">REDUCE Hotel
+                                            Vital -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Pamhagen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5923-vila-vita-pannonia.html">VILA VITA
+                                            Pannonia -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Kärnten [2]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Kleinkirchheim [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4423-thermenwelt-hotel-pulverer.html">Thermenwelt
+                                            Hotel Pulverer -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Warmbad-Villach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3912-hotel-warmbaderhof.html">Hotel
+                                            Warmbaderhof***** -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Niederösterreich [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Mauerbach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5053-schlosspark-mauerbach--adults-only.html">Schlosspark
+                                            Mauerbach - Adults Only -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Oberösterreich [4]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="redme">
+                                <h5>Mühlviertel [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4960-hotel-aviva-make-friends.html">Hotel
+                                            AVIVA make friends</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Schallerbach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5799-hotel-paradiso.html">Hotel Paradiso -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Georgen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1578-hotel-winzer-wellness-kuscheln.html">Hotel
+                                            Winzer Wellness &amp; Kuscheln -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Lorenz [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5824-hotel-gut-eichingerbauer.html">Hotel Gut
+                                            Eichingerbauer -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Stefan am Walde [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4960-hotel-aviva-make-friends.html">Hotel
+                                            AVIVA make friends</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Salzburg [13]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Hofgastein [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4422-hotel-norica-therme.html">Hotel Norica
+                                            Therme -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Flachau [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5510-schlosshotel-lacknerhof.html">Schlosshotel
+                                            Lacknerhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Fuschl am See [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1072-ebners-waldhof-am-see.html">Ebner's
+                                            Waldhof am See -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Großarl [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-6363-das-edelweiss-salzburg-mountain-resort.html">DAS
+                                            EDELWEISS Salzburg Mountain Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Königsleiten [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3639-my-alpenwelt-resort.html">MY ALPENWELT
+                                            Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Leogang [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4968-good-life-resort-riederalm.html">Good
+                                            Life Resort Riederalm -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Maria Alm [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6050-die-hochkoenigin--mountain-resort.html">die
+                                            HOCHKÖNIGIN - Mountain Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Neukirchen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5794-hotel-gassner.html">Hotel Gassner -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="yellowme">
+                                <h5>Obertauern [2]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5918-sporthotel-snowwhite.html">Sporthotel
+                                            Snowwhite -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5917-cinderella-spa-resort.html">Cinderella
+                                            Spa &amp; Resort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Saalfelden [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4424-ritzenhof-hotel-spa-am-see.html">Ritzenhof
+                                            Hotel &amp; Spa am See -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Untertauern [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-3195-alpin-life-resort-luerzerhof.html">Alpin
+                                            Life Resort Lürzerhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Zell am See [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-6353-sport-und-familienresort-alpenblick.html">Sport-
+                                            und Familienresort Alpenblick -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Steiermark [1]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div class="redme">
+                                <h5>Bad Aussee [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5994-hotel-erzherzog-johann.html">Hotel
+                                            Erzherzog Johann -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Tirol [27]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="greenme">
+                                <h5>Zillertal [3]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-6795-zillergrundrock-luxury-mountain-resort.html">ZillergrundRock
+                                            Luxury Mountain Resort</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5141-hotel-alpin-spa-tuxerhof.html">Hotel
+                                            Alpin Spa Tuxerhof</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1053-stock-resort.html">STOCK resort</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="yellowme">
+                                <h5>Ötztal [2]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5269-ski-wellnessresort-hotel-riml.html">Ski
+                                            &amp; Wellnessresort Hotel Riml</a>
+                                    </li>
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1255-waldklause.html">Waldklause</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Achenkirch [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4644-posthotel-achenkirch.html">Posthotel
+                                            Achenkirch -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Alpbach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5577-natur-spa-resort-der-alpbacherhof.html">Natur
+                                            &amp; Spa Resort Der Alpbacherhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Bad Häring [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4895-panorama-royal-s.html">Panorama Royal
+                                            ****S -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Berwang [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5524-hotel-singer-relais-chateaux.html">Hotel
+                                            Singer Relais &amp; Châteaux -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Finkenberg [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1053-stock-resort.html">STOCK resort</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Gerlos [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1212-traumhotel-alpina.html">Traumhotel Alpina
+                                            -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Grän [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5931-wellnesshotel-liebes-rot-flueh.html">Wellnesshotel
+                                            ...liebes Rot-Flüh -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Hochgurgl [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5269-ski-wellnessresort-hotel-riml.html">Ski
+                                            &amp; Wellnessresort Hotel Riml</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Kaltenbach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5816-das-kaltenbach--naturhotel-im-zillertal.html">Das
+                                            Kaltenbach - Naturhotel im Zillertal -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Kitzbühel [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-4324-tennerhof-gourmet-spa-de-charme-hotel.html">Tennerhof
+                                            Gourmet &amp; Spa de Charme Hotel -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Ladis [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6055-romantik-spa-hotel-alpen-herz.html">Romantik
+                                            &amp; Spa Hotel Alpen-Herz -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Leutasch [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4449-quellenhof-leutasch.html">Quellenhof
+                                            Leutasch -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Längenfeld [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-1255-waldklause.html">Waldklause</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Maurach [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5798-wellnessresidenz-alpenrose.html">Wellnessresidenz
+                                            Alpenrose -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Mayrhofen [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-6795-zillergrundrock-luxury-mountain-resort.html">ZillergrundRock
+                                            Luxury Mountain Resort</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Mösern [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4626-casual-luxury-hotel-nidum.html">Casual
+                                            Luxury Hotel Nidum -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Neustift im Stubaital [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6461-vitalhotel-edelweiss.html">Vitalhotel
+                                            Edelweiss -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Obsteig [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5517-holzleiten-bio-wellness-hotel.html">Holzleiten
+                                            Bio Wellness Hotel -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Oetz [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-6397-hotel-habicher-hof.html">Hotel habicher
+                                            hof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Ried im Oberinntal [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5268-familiaeres-wellnesshotel-truyenhof.html">Familiäres
+                                            Wellnesshotel Truyenhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Seefeld [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4939-alpin-resort-sacher.html">Alpin Resort
+                                            Sacher -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>St. Jakob [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5814-naturhotel-kitzspitz.html">Naturhotel
+                                            Kitzspitz -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Sölden [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-4426-bergland-design-und-wellnesshotel-soelden.html">Bergland
+                                            Design- und Wellnesshotel Sölden -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Thiersee [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5793-thierseerhof.html">Thierseerhof -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Tux [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5141-hotel-alpin-spa-tuxerhof.html">Hotel
+                                            Alpin Spa Tuxerhof</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Uderns / Tirol [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4697-hotel-woescherhof.html">Hotel Wöscherhof
+                                            -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Westendorf [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5825-landhotel-schermer.html">Landhotel
+                                            Schermer -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="list-h3">Vorarlberg [5]</h3>
+            <table class="list-table">
+                <thead>
+                    <tr>
+                        <th>Available Regions</th>
+                        <th>Available Cities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="redme">
+                                <h5>Montafon [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-7003-hotel-vitalquelle-montafon.html">Hotel
+                                            Vitalquelle Montafon</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="redme">
+                                <h5>Brand [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4692-valavier-aktivresort.html">Valavier
+                                            Aktivresort -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Damüls [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-5795-panoramahotel-alpenstern.html">Panoramahotel
+                                            Alpenstern -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Mellau [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a
+                                            href="/de/wellnesshotels/hotel-5827-sonne-lifestyle-resort-bregenzerwald.html">Sonne
+                                            Lifestyle Resort Bregenzerwald -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Mittelberg [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-4683-hallers-geniesserhotel.html">Haller's
+                                            Geniesserhotel -
+                                            <span class="warn"> No region set!</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="redme">
+                                <h5>Schruns [1]</h5>
+                                <ul class="smallme">
+                                    <li>
+                                        <a href="/de/wellnesshotels/hotel-7003-hotel-vitalquelle-montafon.html">Hotel
+                                            Vitalquelle Montafon</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="remembered-items" id="saved">
+            <!--dient nur zu ausgabe, solte alles in saved array stehen-->
+            <h1>Items</h1>
+
+        </div>
+        <div class="cst-request cst-request-lp cf" data-requested="0">
+            <form id="ls_request" method="post" action="/de/service/online-buchen/request.php?page=0.page3" name="form"
+                id="cst-request-formidm46109745539568" class="cst-request-form-0-page1">
+
+                <input type="hidden" name="form[request][request_criterion]" value="0" /><input type="hidden"
+                    name="form[form_mode_singlestep]" value="1" /><input type="hidden" name="form_return_step_1"
+                    value="1" /><input type="hidden" name="datetype" value="0" /><input type="hidden" name="mode"
+                    value="lp" />
+                <!--div class="remembered-items">
+                    <label class="cst-delete">
+                        <input type="checkbox" class="visuallyhidden" name="form[hotels][6661]" value="6661"
+                            checked="true" />
+                        6661
+                    </label>
+                    <label class="cst-delete">
+                        <input type="checkbox" class="visuallyhidden" name="form[hotels][3141]" value="3141"
+                            checked="true" />
+                        3141
+                    </label>
+                </div-->
+
+                <div class="cst-box cst-request-lp-col cst-request-trip-infos-lp">
+                    <fieldset class="cst-request-travelling-data-lp">
+                        <div class="cst-request-item cst-request-item-arrival-lp">
+                            <label for="form_rd_from1_idm46109745539568">Anreisetag wählen</label><span
+                                class="fa fa-calendar"></span>
+                            <input type="text" id="form_rd_from1" name="form[rd_from1]" value=""
+                                class="inputtext inputtext-arrival-lp hasDatepicker" required="required"
+                                autocomplete="off" />
+                        </div>
+                        <div class="cst-request-item cst-request-item-departure-lp">
+                            <label for="form_rd_to1_idm46109745539568">Abreisetag wählen</label><span
+                                class="fa fa-calendar"></span><input type="text" id="form_rd_to1" name="form[rd_to1]"
+                                value="" class="inputtext inputtext-arrival-lp hasDatepicker" required="required"
+                                autocomplete="off" />
+                        </div>
+                    </fieldset>
+                    <fieldset class="cst-request-travelling-persons">
+                        <h3 class="cst cst-request">Ihre Reisedaten</h3>
+                        <div class="cst-request-item cst-request-item-adults-lp">
+                            <label for="adults"> Erwachsene </label>
+                            <div class="select-wrapper">
+                                <select id="adults" name="form[request_adults]">
+                                    <option value="--" selected="selected">--</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="cst-request-item cst-request-item-children-lp" id="idm46109745539568">
+                            <label>Alter der mitreisenden Kinder:</label>
+                            <div class="request-form-child request-form-child-1 select-wrapper"
+                                id="request-form-children-boxes-1-idm46109745539568">
+                                <select class="request-form-children-age" id="form[children][0][rc_age]"
+                                    name="form[children][0][rc_age]">
+                                    <option value="-">--</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                </select>
+                            </div>
+                            <div class="request-form-child request-form-child-2 select-wrapper"
+                                id="request-form-children-boxes-2-idm46109745539568">
+                                <select class="request-form-children-age" id="form[children][1][rc_age]"
+                                    name="form[children][1][rc_age]">
+                                    <option value="-">--</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                </select>
+                            </div>
+                            <div class="request-form-child request-form-child-3 select-wrapper"
+                                id="request-form-children-boxes-3-idm46109745539568">
+                                <select class="request-form-children-age" id="form[children][2][rc_age]"
+                                    name="form[children][2][rc_age]">
+                                    <option value="-">--</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="cst-box cst-request-lp-col cst-request-user-data-lp">
+                    <fieldset>
+                        <div class="cst-request-item cst-request-item-firstname-lp">
+                            <ul class="cst-request-salutation-inputs">
+                                <li class="cst-request-salutation-input-male">
+                                    <input class="inputradio" id="sal_male" type="radio" name="form[request_user_title]"
+                                        value="0" required="" /><label class="" for="sal_male">Herr</label>
+                                </li>
+                                <li class="cst-request-salutation-input-female">
+                                    <input class="inputradio" id="sal_female" type="radio"
+                                        name="form[request_user_title]" value="1" required="" /><label class=""
+                                        for="sal_female">Frau</label>
+                                </li>
+                                <li class="cst-request-salutation-input-family">
+                                    <input class="inputradio" id="sal_family" type="radio"
+                                        name="form[request_user_title]" value="3" required="" /><label class=""
+                                        for="sal_family">Familie</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div
+                            class="cst-request-item cst-request-item-firstname cst-request-item-required cst-request-item-firstname-required">
+                            <label class="firstname" for="firstname">
+                                Vorname
+                                <span class="form-field-required">*</span></label><input type="text" id="firstname"
+                                name="form[request_user_firstname]" value="" class="inputtext inputtext-firstname"
+                                required="required" />
+                        </div>
+                        <div
+                            class="cst-request-item cst-request-item-lastname cst-request-item-required cst-request-item-lastname-required">
+                            <label for="lastname">
+                                Nachname
+                                <span class="form-field-required">*</span></label><input type="text" id="lastname"
+                                name="form[request_user_lastname]" value="" class="inputtext inputtext-lastname" />
+                        </div>
+                        <div
+                            class="cst-request-item cst-request-item-email cst-request-item-required cst-request-item-email-required">
+                            <label for="email">
+                                E-Mail
+                                <span class="form-field-required">*</span></label><input type="text" id="email"
+                                name="form[request_user_email]" value="" class="inputtext inputtext-email" />
+                        </div>
+                        <div class="cst-box cst-request-wishes">
+                            <label for="wishes">Wünsche und Anmerkungen:</label><textarea id="wishes" rows="7" cols="40"
+                                name="form[request_wishes]"></textarea>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="cst-box cst-request-lp-col cst-request-marketing-lp">
+                    <div class="cst-request-lp-newsletter">
+                        <input type="checkbox" name="newsletter_subscribe" value="1" id="newsletter" /><label
+                            for="newsletter">Ich bin an regelmäßigen Mitteilungen über günstige Angebote und
+                            Neuigkeiten interessiert.</label>
+                    </div>
+                </div>
+                <div class="cst cst-request cst-request-privacy">
+                    <h2 class="cst cst-request cst-request-privacy">
+                        Datenschutzerklärung
+                    </h2>
+                    <div class="cst-request-privacy-link">
+                        <span class="cms-privacy-info">Wir verarbeiten Ihre Daten ausschließlich zur Bearbeitung Ihrer
+                            Anfrage oder Ihres Auftrags. </span><span class="cms-privacy-link">Weitere Informationen zum
+                            Umgang mit personenbezogenen Daten
+                            finden Sie in unseren
+                            <a href="/(cms)/module/pass/90/redir-legal/privacy/de?cms_redir_fragment=module-legal-privacy-start"
+                                target="_blank">Datenschutzhinweisen</a>. </span><span class="cms-privacy-retention">Die
+                            Daten werden 24 Monate nach der Anfrage gelöscht.</span>
+                    </div>
+                </div>
+                <div class="cst-box cst-request-lp-col cst-request-submit-lp">
+                    <input type="submit" name="submit-form" value="Alles gemerkte jetzt anfragen" id="sbutton"
+                        class="inputbutton" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
