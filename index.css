@@ -29,6 +29,10 @@ button {
   padding: 0.5rem 1rem;
   cursor: pointer;
 }
+h3 span,
+button span {
+  pointer-events: none;
+}
 h3::before,
 button::before {
   content: "\2610";
@@ -47,4 +51,579 @@ button:hover {
 h3:hover::before,
 button:hover::before {
   content: "\2611";
+}
+#specialfilter {
+  display: grid;
+  grid-gap: 1rem;
+}
+#specialfilter h3 {
+  margin: 0 0 1rem 0;
+  font-size: 24px;
+}
+#specialfilter h3 span {
+  font-size: 12px;
+}
+#specialfilter .list-hotels {
+  display: none;
+}
+#specialfilter .border {
+  padding: 1rem;
+  background-color: #fafafa;
+}
+#specialfilter button {
+  margin: 0 1rem 1rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgray;
+  border-radius: 0;
+}
+#specialfilter button::before {
+  content: "\2610";
+  margin: 0 0.5rem 0 0;
+  font-size: 20px;
+}
+#specialfilter button.active {
+  background-color: #ae9a64;
+  color: white;
+}
+#specialfilter button.active::before {
+  content: "\2611";
+}
+@media (min-width: 768px) {
+  .special-header {
+    margin: 0 20px;
+  }
+  #special-filter {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 960px) {
+  #special-filter {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+#main [data-vba-indicator="1"],
+#main [data-vba-indicator="2"],
+#main [data-vba-indicator="5"] {
+  order: -1;
+}
+@media (min-width: 1024px) {
+  #main [data-vba-indicator="1"],
+  #main [data-vba-indicator="2"],
+  #main [data-vba-indicator="5"] {
+    grid-row: span 2;
+    aspect-ratio: unset;
+  }
+}
+@media (max-width: 1023px) {
+  #main [data-vba-indicator="1"] {
+    grid-column: span 2;
+  }
+}
+.vba::before {
+  content: "This feature is unfortunately not supported anymore for your device and browser. =(";
+  color: red;
+  display: block;
+}
+[lang="de"] .vba::before {
+  content: "Dieses Feature wird auf Ihrem Gerät mit diesem Browser leider nicht mehr unterstützt. =(";
+}
+.vba-inner {
+  display: none;
+}
+@supports (aspect-ratio: 1) {
+  #assistant {
+    margin: -40px;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    overflow: hidden;
+  }
+  #assistant.loading {
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  .vba::before {
+    display: none;
+  }
+  .vba-inner {
+    display: grid;
+  }
+  .vba-inner > * {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0;
+    transform: translateX(200vw);
+    pointer-events: none;
+    margin-bottom: auto;
+  }
+  .vba-inner > *.vba-card-active {
+    animation: vbacardin 0.5s ease-in-out;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+  }
+  .vba-inner > *.vba-card-done {
+    animation: vbacardout 0.5s ease-in-out;
+  }
+  .vba-head,
+  .vba-step-headline {
+    grid-column: 1/-1;
+  }
+  .vba-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .vba-card.vba-grid-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .vba-head h2 {
+    position: relative;
+  }
+  span.vba-hotelcounter {
+    vertical-align: top;
+    display: inline-block;
+    background: #1d838f;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-left: 1em;
+    padding: 4px 7px;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    animation: hotelcounter 0.8s ease-in-out;
+  }
+  span.vba-hotelcounter.visible {
+    animation: hotelcounter2 0.8s ease-in-out;
+  }
+  span.vba-hotelcounter.animation-reset {
+    animation: none;
+  }
+  span.vba-hotelcounter::after {
+    content: " Hotels";
+  }
+  span.vba-hotelcounter:empty {
+    display: none;
+  }
+  sup.vba-hotelcounter {
+    position: relative;
+    font-size: inherit;
+    vertical-align: bottom;
+    color: #1d838f;
+    margin-left: 0.3em;
+    padding: 0 3px;
+    font-size: 13px;
+    font-weight: bold;
+    z-index: 1;
+  }
+  sup.vba-hotelcounter::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ffffff;
+    border-radius: 3px;
+    z-index: -1;
+  }
+  sup.vba-hotelcounter:empty {
+    display: none;
+  }
+  .vba-step {
+    display: grid;
+    gap: 40px;
+    margin-bottom: auto;
+  }
+  .vba .vba-grid {
+    display: grid;
+    gap: 1.25em;
+  }
+  .vba label {
+    cursor: pointer;
+  }
+  .vba-label * {
+    pointer-events: none;
+  }
+  .vba-label-asimage {
+    background-color: #ae9a64;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    container-type: inline-size;
+  }
+  .vba-label-asimage:hover,
+  .vba-label-asimage.active {
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.09);
+  }
+  .vba-label-asimage:hover .vba-label-image,
+  .vba-label-asimage.active .vba-label-image {
+    transform: scale(1.02);
+    opacity: 0.5;
+  }
+  .vba-label-asimage:hover {
+    transform: scale(1.024);
+  }
+  .vba-label-asimage:hover .vba-label-overlay {
+    background-color: rgba(174, 154, 100, 0.25);
+  }
+  .vba-label-asimage.active {
+    background-color: #1d838f;
+  }
+  .vba-label-asimage.active .vba-label-overlay {
+    background-color: rgba(29, 131, 143, 0.5);
+  }
+  .vba-label-ascheckbox {
+    position: relative;
+    padding-left: calc(.875em + 24px);
+    box-sizing: border-box;
+    color: #ae9a64;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .vba-label-ascheckbox::before {
+    content: "";
+    position: absolute;
+    inset: 2px auto auto 0;
+    padding-left: 3px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #ae9a64;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.25em;
+  }
+  .vba-label-ascheckbox.active::before {
+    content: "\f00c";
+    background-color: #ae9a64;
+  }
+  .vba-label.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .vba-label picture {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  }
+  .grp .vba-label-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .vba-label:has(.vba-label-overlay) {
+    container-type: inline-size;
+  }
+  .grp .vba-label-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0.25em;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    z-index: 10;
+    font-size: calc(.75em + 7.5cqw);
+  }
+  .vba-label-overlay {
+    transition: background-color 0.3s ease-in-out;
+  }
+  .vba-label-overlay::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    z-index: -1;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .vba-label-counter {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 4px 6px;
+    overflow: hidden;
+    background: #ffffff;
+    color: #47372a;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+  }
+  .vba-footer {
+    display: flex;
+    gap: 1.25em;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    grid-column: 1/-1;
+  }
+  .vba-footer label {
+    position: relative;
+    padding: 0 50px 0 1.5em;
+    background: #ae9a64;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 1rem;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+  .vba-footer label::before {
+    content: "\f105";
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.35em;
+  }
+  .vba-footer .vba-footer-prev {
+    padding: 0 20px 0 50px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: auto;
+    background: #f2efe6;
+    color: #47372a;
+  }
+  .vba-footer .vba-footer-prev::before {
+    content: "\f104";
+    font-size: 2em;
+    inset: unset;
+    left: 0;
+  }
+  .vba-footer .vba-footer-prev:hover {
+    color: #ffffff;
+  }
+  .vba-footer .vba-footer-next {
+    background: #1d838f;
+    white-space: nowrap;
+    max-width: 340px;
+    opacity: 1;
+    transition: padding-inline 0.3s ease-in-out, max-width 0.3s ease-in-out;
+    order: 1;
+  }
+  .vba-footer .vba-footer-next:not(.visible) {
+    max-width: 0;
+    padding-inline: 0;
+    opacity: 0;
+  }
+  .vba-footer .vba-footer-nextall {
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .vba-footer .vba-footer-next.visible + .vba-footer-nextall {
+    background-color: #f2efe6;
+    color: #47372a;
+  }
+  .vba-footer .vba-footer-next.visible + .vba-footer-nextall:hover {
+    color: #ffffff;
+  }
+  .vba-error {
+    position: absolute;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    z-index: 100;
+    animation: bawarn 3s ease-in-out;
+    pointer-events: none;
+  }
+  .vba-error.error-visible {
+    display: flex;
+  }
+  .vba-error-inner {
+    display: flex;
+    flex-direction: column;
+    width: min(calc(100% - 2.5em), 400px);
+    background: #ffffff;
+    padding: 1.5em;
+    font-size: clamp(1.125em, 2vw, 1.25em);
+    box-sizing: border-box;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(6px);
+  }
+  .vba-error strong {
+    display: block;
+    color: #901d1d;
+    font-size: 1.25em;
+    line-height: 1.35;
+  }
+  .vba-countries-number::after {
+    content: " ";
+  }
+  .vba-countries-number:empty {
+    display: none;
+  }
+  .vba-card-loading {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    isolation: isolate;
+  }
+  .vba-card-loading::before {
+    content: "";
+    position: absolute;
+    inset: -100%;
+    background: radial-gradient(ellipse at bottom, #3bc7d7, #0c353a) no-repeat;
+    background-size: 100%;
+    background-position: center center;
+  }
+  .vba-card-loading.vba-card-active div {
+    animation: vbaloadingtext 3s ease-in-out infinite;
+  }
+  .vba-card-loading.vba-card-active::before {
+    animation: vbaloadingbg 12s ease-in-out infinite;
+  }
+  .vba-card-loading .vba-card-final-subheadline {
+    font-size: 0.5em;
+  }
+  @media (min-width: 768px) {
+    .vba-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 414px) {
+    .vba-label-ascheckbox {
+      grid-column: 1/-1;
+    }
+    .vba-footer label > span {
+      display: none;
+    }
+    .vba-footer > label {
+      flex: 1 1 auto;
+    }
+    .vba-footer .vba-footer-prev {
+      flex: 0 0 auto;
+    }
+    .vba-footer .vba-footer-prev ~ .vba-label-nextall {
+      flex: 1 1 calc(100% - 1.25em - 50px);
+    }
+  }
+  @media (min-width: 1024px) {
+    .vba-card.vba-grid-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .vba-grid-4 {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+    }
+    .vba-card-2 > .vba-step:nth-child(2) {
+      margin-right: 20px;
+    }
+    .vba-card-2 > .vba-step:nth-child(2) + .vba-step {
+      margin-left: 20px;
+    }
+  }
+}
+@keyframes vbacardin {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes vbacardout {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+}
+@keyframes bawarn {
+  0% {
+    opacity: 0;
+  }
+  10%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hotelcounter {
+  0% {
+    opacity: 0;
+    transform: scale(3);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes vbaloadingtext {
+  0%,
+  80% {
+    transform: none;
+  }
+  85% {
+    transform: scale(0.95);
+  }
+  95% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes vbaloadingbg {
+  0% {
+    transform: translateX(5%) translateY(25%);
+  }
+  25% {
+    transform: translateX(-25%) translateY(-20%);
+  }
+  50% {
+    transform: translateX(-5%) translateY(20%);
+  }
+  75% {
+    transform: translateX(20%) translateY(25%);
+  }
+  100% {
+    transform: translateX(5%) translateY(25%);
+  }
+}
+@keyframes vbanextpopinto {
+  0% {
+    padding-inline: 0;
+    max-width: 0;
+  }
+  100% {
+    padding-inline: calc(1.5em + 50px) 1.5em;
+    max-width: 340px;
+  }
 }
