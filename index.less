@@ -45,8 +45,7 @@ h3 , button {
     display: inline-flex;
     align-items: center;
     border: 1px solid red;
-    margin:0 1rem .5rem 0;
-    padding: .5rem 1rem;
+   font-size: 10px;
     cursor: pointer;
     span {
         pointer-events: none;
@@ -97,8 +96,9 @@ h3 , button {
 		background-color: #fafafa;
 	}
 	button {
-		margin: 0 1rem 1rem 0;
-		padding: 0.5rem 1rem;
+		span{
+            pointer-events: none;
+        }
 		border: 1px solid lightgray;
 		border-radius:0;
 		&::before {
