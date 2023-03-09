@@ -18,6 +18,7 @@
 		}
     };
 	console.log(af.buttons);
+    ..
 	const checkButtons = (e)=>{
 		let array = JSON.parse(e.target.closest('button').dataset.hotels);
 		let msg = document.querySelectorAll('.saved-items')[0];
